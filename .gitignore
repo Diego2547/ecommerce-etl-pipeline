@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+
+*.log
+logs/
+logs_tf/
+
+*.db
+*.sqlite
+*.sqlite3
+
+.vscode/
