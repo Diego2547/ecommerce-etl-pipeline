@@ -84,9 +84,18 @@ The automation script coordinates both stages and only executes `Transform.py` w
 
 **Scheduling note:** When periodic scheduling is enabled, the scheduler must remain running. It does not execute tasks while the computer or process is turned off.
 
+## SQL Analysis
+
+The queries in [`analysis/analysis.sql`](analysis/analysis.sql) use the
+`products_clean` table in SQLite to answer three questions:
+
+1. Which product categories have the highest average prices?
+2. Which product categories have the highest average discounts?
+3. Which product have a discounted price below their category average and a rating above their category average?
+
 ## Future Improvements
 
-- Add SQL queries to analyze product pricing, discounts, and ratings.
+
 - Improve configuration and error handling.
 - Add automated tests and data-quality checks.
 - Explore dashboards using the prepared data.
